@@ -65,20 +65,7 @@ def summarize():
 
     # print(sentence_scores)
 
-    '''
-    from heapq import nlargest
-    
-    select_length = int(len(sentence_tokens)*0.03)
-    print(select_length)
-    
-    summary = nlargest(select_length, sentence_scores, key=sentence_scores.get)
-    #print(summary)
-    
-    final_summary = [word.text for word in summary]
-    summary = " ".join(final_summary)
-    print(summary)
-    print(len(text))
-    print(len(summary))'''
+
 
     sum = 0;
     for sent in sentence_scores:

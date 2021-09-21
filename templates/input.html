@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Text Summarization</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1>TEXT SUMMARIZER</h1>
+    </header>
+
+    <div class="container">
+        <form action="{{ url_for('summarize')}}" method="POST">
+            <p>Hey stop wasting your time.....bring your large text....Read less do more.....</p>
+
+            <p>Enter Your Text Here:</p>
+            <textarea name="text" rows="12" cols="120"></textarea><br><br>
+            <input type="submit" class="btn-cls" value="Summarize">
+            <button type="reset" class="btn-cls">Clear</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>
+            @2021 Text Summarizer
+        </p>
+    </footer>
+</body>
+
+</html>
